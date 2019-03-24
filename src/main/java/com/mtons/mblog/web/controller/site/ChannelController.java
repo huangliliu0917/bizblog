@@ -13,8 +13,8 @@ import com.mtons.mblog.base.lang.Consts;
 import com.mtons.mblog.base.utils.MarkdownUtils;
 import com.mtons.mblog.modules.data.PostVO;
 import com.mtons.mblog.modules.entity.Channel;
-import com.mtons.mblog.modules.entity.PostAttribute;
 import com.mtons.mblog.modules.service.ChannelService;
+import com.mtons.mblog.modules.service.CommentService;
 import com.mtons.mblog.modules.service.PostService;
 import com.mtons.mblog.web.controller.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +38,9 @@ public class ChannelController extends BaseController {
 	private ChannelService channelService;
 	@Autowired
 	private PostService postService;
+
+	@Autowired
+	private CommentService commentService;
 	
 	@RequestMapping("/channel/{id}")
 	public String channel(@PathVariable Integer id, ModelMap model,
@@ -64,6 +67,7 @@ public class ChannelController extends BaseController {
 			view.setContent(MarkdownUtils.renderMarkdown(view.getContent()));
 		}
 		postService.identityViews(id);
+
 		model.put("view", view);
 		return view(Views.POST_VIEW);
 	}

@@ -8,10 +8,6 @@
                 <span class="footer-nav-item">${options['site_copyright']}</span>
                 <span class="footer-nav-item">${options['site_icp']}</span>
             </nav>
-            <div class="gh-foot-min-back hidden-xs hidden-sm">
-                <!-- 请保留此处标识-->
-                <span class="footer-nav-item">Powered by <a href="https://github.com/langhsu/mblog" target="_blank">mblog</a></span>
-            </div>
         </div>
     </div>
 </footer>

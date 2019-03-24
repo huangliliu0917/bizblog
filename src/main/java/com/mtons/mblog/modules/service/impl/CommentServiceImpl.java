@@ -150,6 +150,8 @@ public class CommentServiceImpl implements CommentService {
 		return ret;
 	}
 
+
+
 	@Override
 	@Transactional
 	public long post(CommentVO comment) {
