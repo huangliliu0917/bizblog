@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.mtons.mblog</groupId>
-	<artifactId>mblog</artifactId>
+	<groupId>com.bizblog</groupId>
+	<artifactId>bizblog</artifactId>
 	<version>latest</version>
 	<packaging>jar</packaging>
 
@@ -308,7 +308,7 @@
 				<configuration>
 					<fork>true</fork>
 					<jvmArguments>-Dfile.encoding=UTF-8</jvmArguments>
-					<mainClass>com.mtons.mblog.BootApplication</mainClass>
+					<mainClass>com.bizblog.BootApplication</mainClass>
 				</configuration>
 			</plugin>
 			<plugin>

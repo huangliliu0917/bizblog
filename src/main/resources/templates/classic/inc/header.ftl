@@ -85,11 +85,11 @@
 					</#if>
 					<#list channels as row>
 						<li>
-							<a href="${base}/channel/${row.id}<#if options['site_staic'] == "1">.html</#if>" nav="${row.name}">${row.name}</a>
+							<a href="${base}/channel/${row.id}<#if options['site_static'] == "1">.html</#if>" nav="${row.name}">${row.name}</a>
 						</li>
 					</#list>
                         <li>
-                            <a href="${base}/tags<#if options['site_staic'] == "1">.html</#if>" nav="tags">标签</a>
+                            <a href="${base}/tags<#if options['site_static'] == "1">.html</#if>" nav="tags">标签</a>
                         </li>
                 </ul>
                 <ul class="navbar-button list-inline" id="header_user">

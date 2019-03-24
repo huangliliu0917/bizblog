@@ -8,7 +8,7 @@
                         <#assign post = row.post />
                         <div class="col-sm-6 row-item">
                             <h2 class="title">
-                                <a href="${base}/tag/${row.name}/"><i class="fa fa-quote-left"></i> ${row.name}</a>
+                                <a href="${base}/tag/${row.name}<#if options['site_static'] == "1">.html</#if>"><i class="fa fa-quote-left"></i> ${row.name}</a>
                                 <span class="label label-default">${row.posts}</span>
                             </h2>
                             <#if post??>
@@ -18,7 +18,7 @@
                                     </div>
                                     <div class="media-body">
                                         <h4 class="media-heading">
-                                            <a href="${base}/post/${row.id}">${post.title?html}</a>
+                                            <a href="${base}/post/${row.id}<#if options['site_static'] == "1">.html</#if>">${post.title?html}</a>
                                         </h4>
                                     </div>
                                 </div>

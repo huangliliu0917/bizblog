@@ -3,28 +3,14 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <!--
-    ------------------------------------------------------
-     _____ ______   ________  ___       ________  ________
-    |\   _ \  _   \|\   __  \|\  \     |\   __  \|\   ____\
-    \ \  \\\__\ \  \ \  \|\ /\ \  \    \ \  \|\  \ \  \___|
-     \ \  \\|__| \  \ \   __  \ \  \    \ \  \\\  \ \  \  ___
-      \ \  \    \ \  \ \  \|\  \ \  \____\ \  \\\  \ \  \|\  \
-       \ \__\    \ \__\ \_______\ \_______\ \_______\ \_______\
-        \|__|     \|__|\|_______|\|_______|\|_______|\|_______|
-    ------------------------------------------------------------
-    version: ${site.version}
-    github : https://github.com/langhsu/mblog
-    ------------------------------------------------------------
-    -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if IE]>
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'/>
     <![endif]-->
-    <meta name="keywords" content="mtons, ${keywords?default(options['site_keywords'])}">
+    <meta name="keywords" content="${keywords?default(options['site_keywords'])}">
     <meta name="description" content="${description?default(options['site_description'])}">
-    <meta name="mtons:mblog" content="${site.version}">
+    <meta name="bizblog" content="${site.version}">
     ${options['site_metas']}
 
     <title>${title?default(options['site_name'])}</title>

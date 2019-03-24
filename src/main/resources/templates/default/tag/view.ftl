@@ -37,7 +37,7 @@
                             <div class="infos">
                                 <div class="media-heading">
 								<#--<span class="hidden-xs label label-warning">${row.channel.name}</span>-->
-                                    <a href="${base}/post/${post.id}">${post.title}</a>
+                                    <a href="${base}/post/${post.id}<#if options['site_static'] == "1">.html</#if>">${post.title}</a>
                                 </div>
                             </div>
                         </li>

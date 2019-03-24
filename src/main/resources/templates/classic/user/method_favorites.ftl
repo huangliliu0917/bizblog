@@ -15,7 +15,7 @@
                             <#assign target = row.post />
                             <li class="list-group-item" id="loop-${target.id}">
                                 <#if target??>
-                                    <a href="${base}/post/${target.id}" class="remove-padding-left">${target.title}</a>
+                                    <a href="${base}/post/${target.id}<#if options['site_static'] == "1">.html</#if>" class="remove-padding-left">${target.title}</a>
                                 <#else>
                                     <a href="javascript:;" class="remove-padding-left">文章已删除</a>
                                 </#if>

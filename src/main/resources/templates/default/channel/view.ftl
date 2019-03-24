@@ -30,7 +30,7 @@
             <div class="panel-footer operate">
                 <#list view.tagsArray as tag>
                     <span>
-                        <a class="label label-default" href="${base}/tag/${tag}/">#${tag}</a>
+                        <a class="label label-default" href="${base}/tag/${tag}<#if options['site_static'] == "1">.html</#if>">#${tag}</a>
                     </span>
                 </#list>
             </div>

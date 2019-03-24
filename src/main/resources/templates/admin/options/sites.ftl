@@ -63,6 +63,15 @@
         </div>
     </div>
     <div class="form-group">
+        <label class="col-lg-2 control-label">前台启用伪静态化</label>
+        <div class="col-lg-2">
+            <select class="form-control" name="site_static" data-select="${options['site_static']}">
+                <option value="1">是</option>
+                <option value="0">否</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
             <button type="submit" class="btn btn-primary">提交</button>
         </div>

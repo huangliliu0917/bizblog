@@ -21,4 +21,10 @@
         <to>/tags</to>
     </rule>
 
+    <!-- 标签详情页 -->
+    <rule>
+        <from>^/tag/(\w+)\.html</from>
+        <to>/tag/$1/</to>
+    </rule>
+
 </urlrewrite>

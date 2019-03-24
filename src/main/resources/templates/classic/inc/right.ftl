@@ -6,7 +6,7 @@
 		<@sidebar method="hottest_posts">
 		<ul class="list">
 			<#list results as row>
-            <li>${row_index + 1}. <a href="${base}/post/${row.id}">${row.title}</a></li>
+            <li>${row_index + 1}. <a href="${base}/post/${row.id}<#if options['site_static'] == "1">.html</#if>">${row.title}</a></li>
 			</#list>
 		</ul>
 		</@sidebar>
@@ -21,7 +21,7 @@
 		<@sidebar method="latest_posts">
 			<ul class="list">
 				<#list results as row>
-					<li>${row_index + 1}. <a href="${base}/post/${row.id}">${row.title}</a></li>
+					<li>${row_index + 1}. <a href="${base}/post/${row.id}<#if options['site_static'] == "1">.html</#if>">${row.title}</a></li>
 				</#list>
 			</ul>
 		</@sidebar>
@@ -36,7 +36,7 @@
 		<@sidebar method="latest_comments">
 			<ul class="list">
 				<#list results as row>
-					<li><a href="${base}/post/${row.postId}">${row.content}</a></li>
+					<li><a href="${base}/post/${row.postId}<#if options['site_static'] == "1">.html</#if>">${row.content}</a></li>
 				</#list>
 			</ul>
 		</@sidebar>
